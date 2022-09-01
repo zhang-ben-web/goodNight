@@ -47,7 +47,7 @@ def get_dujitang():
   return words.json()['data']['text']
 
 def get_pengyouquan():
-  words = requests.get("https://api.shadiao.pro/du")
+  words = requests.get("https://api.shadiao.pro/pyq")
   if words.status_code != 200:
     return get_words()
   return words.json()['data']['text']
