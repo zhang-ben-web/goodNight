@@ -1,34 +1,3 @@
-
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@zhang-ben-web 
-zhang-ben-web
-/
-goodMorning
-Public
-generated from xiaomo196/xiaomo196
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-goodMorning/main.py /
-@zhang-ben-web
-zhang-ben-web Update main.py
-Latest commit 50be48a 17 minutes ago
- History
- 1 contributor
-53 lines (41 sloc)  1.69 KB
-
 from datetime import date, datetime
 import math
 from wechatpy import WeChatClient
