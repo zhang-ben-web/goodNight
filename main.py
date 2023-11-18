@@ -62,7 +62,7 @@ def generate_random_color():
     return color
   
 def returnpinjie():
-    return get_words() + "/n" + get_dujitang()+ "/n" + get_pengyouquan()
+    return () + "/n" + ()+ "/n" + ()
 client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
@@ -75,7 +75,9 @@ data = {
   "min_temperature":{"value":min_temperature, "color": generate_random_color()},
   "love_days":{"value":get_count(), "color": generate_random_color()},
   "birthday_left":{"value": get_birthday(), "color": generate_random_color()},
-  "Copywriting":{"value":returnpinjie(), "color": generate_random_color()},
+  "words":{"value": get_words(), "color": generate_random_color()},
+  "dujitang":{"value": get_dujitang(), "color": generate_random_color()},
+  "pengyouquan":{"value":get_pengyouquan(), "color": generate_random_color()},
 }
 res = wm.send_template(user_id, template_id, data)
 print(res)
