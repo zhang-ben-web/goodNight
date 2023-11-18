@@ -62,7 +62,7 @@ def generate_random_color():
     return color
   
 def returnpinjie():
-    return get_words() + "\n" + get_dujitang()+ "\n" + get_pengyouquan()
+    return get_words() + "/n" + get_dujitang()+ "/n" + get_pengyouquan()
 client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
